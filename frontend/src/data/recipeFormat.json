@@ -1,0 +1,36 @@
+{
+    "recipe_id": "1",
+    "firstName": "Toni",
+    "lastName": "Vanjak",
+    "thumbnail": "imageURL",
+    "recipeTitle": "Meso",
+    "recipeDesc": "opis",
+    "cookingTime": "45mins",
+    "privacy": "true | false", //is_private atribut
+    "rating": "0-5",
+    "reviewNum": "123", //broj recenzija (morati ćete izračunati ručno)
+    "categories": [],
+    "tags": [],
+    "event": "događaj",
+    "calories": "1000", //ovo nam morate poslati od FatSecreta
+    "proteins": "123",
+    "carbs": "123",
+    "fats": "123",
+    "sugars": "123",
+    "salt": "123",
+    "ingredients": [
+        { "ingredient": "meat", "ammount": "100g" },
+        { "ingredient": "meat", "ammount": "100g" }
+    ],
+    "steps": [
+        {
+            "stepDesc": "Opis koraka",
+            "stepImages": [
+                {
+                    "image": "imageURL",
+                    "imageDesc": "Opis pojedine slike unutar koraka" //image_alt atribut
+                }
+            ]
+        }
+    ]
+}

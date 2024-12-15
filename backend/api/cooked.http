@@ -1,0 +1,44 @@
+### Find ALl Recipes
+GET http://localhost:8080/api/recipes
+
+### Find Recipe By ID
+GET http://localhost:8080/api/recipes/ID1
+
+### Find Recipe By ID that doesn't exist
+GET http://localhost:8080/api/recipes/99
+
+
+### Create new Recipe
+POST http://localhost:8080/api/recipes
+Content-Type: application/json
+
+{
+  "title": "Recipe Created By POST"
+}
+
+### Create new invalid Recipe with empty title
+POST http://localhost:8080/api/recipes
+Content-Type: application/json
+
+{
+  "title": ""
+}
+
+### Create new invalid Recipe with no title field
+POST http://localhost:8080/api/recipes
+Content-Type: application/json
+
+{
+
+}
+
+### Delete a Recipe
+DELETE http://localhost:8080/api/recipes/ID1
+
+### Update a recipe
+PUT http://localhost:8080/api/recipes/ID1
+Content-Type: application/json
+
+{
+    "title": "Updated Title"
+}

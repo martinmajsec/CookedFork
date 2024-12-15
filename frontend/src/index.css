@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: "Lexend Deca";
+}
+
+/* dark mode user-agent-styles */
+
+html {
+    color-scheme: dark light;
+    width: 100dvw;
+}
+
+/* min body height */
+
+body {
+    min-height: 100vh;
+    background-color: #fffefc;
+    overflow-x: hidden;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+.slide-in-container-1s {
+    transform: translateY(
+        -50px
+    ); /* Start the container offscreen from the top */
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0); /* Slide to its normal position */
+        opacity: 1; /* Fade in */
+    }
+}
+.slide-in-container-05s {
+    transform: translateY(
+        -50px
+    ); /* Start the container offscreen from the top */
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0); /* Slide to its normal position */
+        opacity: 1; /* Fade in */
+    }
+}

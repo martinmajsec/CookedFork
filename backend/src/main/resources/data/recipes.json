@@ -1,0 +1,16 @@
+{
+  "recipes": [
+    {
+      "id": "ID1",
+      "title": "mockupTitle1"
+    },
+    {
+      "id": "ID2",
+      "title": "mockupTitle2"
+    },
+    {
+      "id": "ID3",
+      "title": "mockupTitle3"
+    }
+  ]
+}

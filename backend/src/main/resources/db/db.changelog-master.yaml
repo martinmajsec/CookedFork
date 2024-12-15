@@ -1,0 +1,57 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: CookedCorp
+      changes:
+        - createTable:
+            tableName: profile
+            columns:
+              - column:
+                  name: profile_id
+                  type: int # promijeni u serial
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: username
+                  type: varchar(25)
+                  constraints:
+                    unique: true
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: varchar(25)
+              - column:
+                  name: last_name
+                  type: varchar(25)
+              - column:
+                  name: email
+                  type: varchar(50)
+                  constraints:
+                    unique: true
+                    nullable: false
+              - column:
+                  name: password
+                  type: varchar(255)
+              - column:
+                  name: is_admin
+                  type: boolean
+
+  - changeSet:
+      id: 2
+      author: CookedCorp
+      changes:
+        - createTable:
+            tableName: recipe
+            columns:
+              - column:
+                  name: id
+                  type: varchar(25) # promijeni u serial
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(300)
+                  constraints:
+                    nullable: false
